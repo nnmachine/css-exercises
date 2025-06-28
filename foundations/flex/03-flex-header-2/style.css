@@ -8,10 +8,24 @@ body {
   font-family: Besley, serif;
 }
 
-.header {
+.header,
+.header-left,
+.header-right {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+}
+.header-left {
+  justify-content: flex-start;
+}
+.header-right {
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .profile-image {
@@ -45,4 +59,6 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 8px;
 }
